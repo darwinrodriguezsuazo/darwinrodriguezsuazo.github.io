@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto — Darwin Rodríguez Suazo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <a href="index.html" class="site-title">Darwin Rodríguez Suazo</a>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="servicios.html">Servicios editoriales</a>
+      <a href="trabajos.html">Trabajos realizados</a>
+      <a href="sobre-mi.html">Sobre mí</a>
+      <a href="libros.html">Libros disponibles</a>
+      <a href="contacto.html" class="active">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Contacto</h1>
+    <p class="lead">Puedes escribirme directamente a <strong><a href="mailto:darwinrodriguez.edicion@gmail.com" style="color: inherit;">darwinrodriguez.edicion@gmail.com</a></strong> o completar el siguiente formulario según el motivo de tu consulta.</p>
+
+    <!-- Reemplaza TU_CODIGO_FORMSPREE con el enlace gratuito que te entrega formspree.io -->
+    <form action="https://formspree.io/f/TU_CODIGO_FORMSPREE" method="POST">
+      <div>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required>
+      </div>
+
+      <div>
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div>
+        <label for="tipo">Tipo de consulta</label>
+        <select id="tipo" name="tipo">
+          <option value="proyecto-editorial">Proyecto editorial (autor, editorial o institución)</option>
+          <option value="libro-disponible">Libros disponibles (compra, disponibilidad o envío)</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="mensaje">Descripción breve del proyecto o título que buscas</label>
+        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Si se trata de un manuscrito, indica género, extensión aproximada y estado actual del texto." required></textarea>
+      </div>
+
+      <button type="submit">Enviar consulta</button>
+    </form>
+  </main>
+
+  <footer>
+    <span>Darwin Rodríguez Suazo · Edición y librería literaria</span>
+    <span>darwinrodriguez.edicion@gmail.com</span>
+  </footer>
+</body>
+</html>
