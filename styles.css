@@ -25,7 +25,7 @@ html, body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Retícula editorial asimétrica (Margen fijo + Columna de lectura) */
+/* RetÃ­cula editorial asimÃ©trica (Margen fijo + Columna de lectura) */
 .editorial-layout {
   max-width: 1060px;
   margin: 0 auto;
@@ -36,7 +36,7 @@ html, body {
   gap: 4rem;
 }
 
-/* Columna izquierda: identidad, índice y eje gráfico */
+/* Columna izquierda: identidad, Ã­ndice y eje grÃ¡fico */
 .sidebar {
   position: sticky;
   top: 3.5rem;
@@ -68,7 +68,7 @@ html, body {
   line-height: 1.45;
 }
 
-/* Menú vertical tipo índice de monografía */
+/* MenÃº vertical tipo Ã­ndice de monografÃ­a */
 .nav-menu {
   display: flex;
   flex-direction: column;
@@ -96,7 +96,7 @@ html, body {
 }
 
 .nav-menu a.active::before {
-  content: "—";
+  content: "â€”";
   color: var(--text);
 }
 
@@ -111,7 +111,7 @@ html, body {
   font-weight: 500;
 }
 
-/* Grabado de Tomé anclado en el margen izquierdo */
+/* Grabado de TomÃ© en su color original anclado en el margen izquierdo */
 .margin-artwork {
   margin-top: 0.5rem;
   padding-top: 1.25rem;
@@ -122,8 +122,9 @@ html, body {
   width: 100%;
   height: auto;
   display: block;
-  filter: grayscale(100%) contrast(1.18) brightness(1.04);
-  opacity: 0.78;
+  mix-blend-mode: multiply;
+  filter: contrast(1.12) brightness(1.05);
+  opacity: 0.92;
 }
 
 .margin-artwork figcaption {
@@ -190,6 +191,40 @@ p {
   margin-bottom: 2rem;
 }
 
+/* Retrato y cabecera biogrÃ¡fica en Sobre mÃ­ */
+.bio-header {
+  display: grid;
+  grid-template-columns: 175px 1fr;
+  gap: 1.75rem;
+  align-items: start;
+  margin-bottom: 0.25rem;
+}
+
+.author-photo {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  border: 1px solid var(--rule);
+  background: #FAFAFA;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--subtle);
+}
+
+.author-photo.photo-placeholder {
+  padding: 0.75rem;
+}
+
+.author-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 /* Enlaces editoriales */
 a.text-link {
   color: var(--text);
@@ -203,7 +238,7 @@ a.text-link:hover {
   text-decoration-color: var(--text);
 }
 
-/* Índice numerado (01, 02, 03) */
+/* Ãndice numerado (01, 02, 03) */
 .index-table {
   margin-top: 3rem;
   border-top: 1px solid var(--rule-strong);
@@ -280,7 +315,7 @@ a.text-link:hover {
   margin-top: 1rem;
 }
 
-/* Módulo de diálogo con Transa (Blog de archivo) */
+/* MÃ³dulo de diÃ¡logo con Transa (Blog de archivo) */
 .archive-bridge {
   margin-top: 2.75rem;
   padding: 1.5rem;
@@ -336,7 +371,7 @@ li {
   color: #262626;
 }
 
-/* Botón minimalista */
+/* BotÃ³n minimalista */
 .btn {
   display: inline-block;
   font-size: 0.85rem;
@@ -403,7 +438,7 @@ button[type="submit"]:hover {
   color: var(--text);
 }
 
-/* Colofón inferior */
+/* ColofÃ³n inferior */
 .colophon-footer {
   margin-top: 4.5rem;
   padding-top: 1.25rem;
@@ -426,7 +461,7 @@ button[type="submit"]:hover {
   text-decoration: underline;
 }
 
-/* Adaptación móvil */
+/* AdaptaciÃ³n mÃ³vil */
 @media (max-width: 840px) {
   .editorial-layout {
     grid-template-columns: 1fr;
@@ -452,6 +487,13 @@ button[type="submit"]:hover {
   }
   .margin-artwork {
     display: none;
+  }
+  .bio-header {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  .author-photo {
+    max-width: 185px;
   }
   .rate-row {
     grid-template-columns: 1fr;
