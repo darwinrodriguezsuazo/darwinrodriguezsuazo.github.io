@@ -7,59 +7,66 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="bg-watermark" aria-hidden="true"></div>
-
-  <header>
-    <div class="site-branding">
-      <a href="index.html" class="site-title">Darwin Rodríguez Suazo</a>
-      <p class="site-description">Editor independiente y librero | literatura y edición</p>
-    </div>
-    <nav aria-label="Menú principal">
-      <a href="index.html">Inicio</a>
-      <a href="servicios.html">Servicios editoriales</a>
-      <a href="trabajos.html" class="active">Trabajos realizados</a>
-      <a href="sobre-mi.html">Sobre mí</a>
-      <a href="libros.html">Libros disponibles</a>
-      <a href="contacto.html">Contacto</a>
-      <a href="https://transa.hypotheses.org/" target="_blank" rel="noopener" class="blog-link">Transa (Blog) ↗</a>
-    </nav>
-  </header>
-
-  <main>
-    <p class="meta">Archivo editorial</p>
-    <h1>Trabajos realizados</h1>
-    <p class="lead">Selección de libros de poesía, ensayo y narrativa en los que he participado en distintas etapas de edición, corrección y producción.</p>
-
-    <article class="book-entry">
-      <div class="book-cover">
-        <img src="portadas/libro-1.jpg" alt="Portada del libro 1" onerror="this.style.display='none'; this.parentElement.textContent='Portada pendiente';">
+  <div class="editorial-layout">
+    <aside class="sidebar">
+      <div class="identity">
+        <a href="index.html" class="site-title">Darwin Rodríguez Suazo</a>
+        <p class="site-role">Editor independiente &amp; librero<br>Literatura, edición y archivo</p>
       </div>
-      <div>
-        <p class="meta">Poesía · Editorial Ejemplo · Santiago, 2025</p>
-        <h3>Título del primer libro — Nombre del Autor/a</h3>
-        <p><strong>Trabajo realizado:</strong> revisión del manuscrito, corrección de pruebas, coordinación con diseño y preparación de archivos para impresión.</p>
-        <p>Breve descripción del proyecto editorial, características materiales de la edición o contexto de publicación en dos o tres líneas.</p>
-        <a href="https://enlace-editorial-o-resena.cl" target="_blank" rel="noopener" class="inline-link">Ver ficha en la editorial →</a>
-      </div>
-    </article>
 
-    <article class="book-entry">
-      <div class="book-cover">
-        <img src="portadas/libro-2.jpg" alt="Portada del libro 2" onerror="this.style.display='none'; this.parentElement.textContent='Portada pendiente';">
-      </div>
-      <div>
-        <p class="meta">Ensayo · Editorial Ejemplo · Santiago, 2024</p>
-        <h3>Título del segundo libro — Nombre del Autor/a</h3>
-        <p><strong>Trabajo realizado:</strong> lectura editorial, unificación de criterios y aparato crítico, corrección de estilo y seguimiento de imprenta.</p>
-        <p>Breve descripción del proyecto editorial, enfoque de la colección o relevancia del texto dentro de su catálogo.</p>
-        <a href="https://enlace-editorial-o-resena.cl" target="_blank" rel="noopener" class="inline-link">Ver ficha en la editorial →</a>
-      </div>
-    </article>
-  </main>
+      <nav class="nav-menu" aria-label="Menú principal">
+        <a href="index.html">Inicio</a>
+        <a href="servicios.html">Servicios editoriales</a>
+        <a href="trabajos.html" class="active">Trabajos realizados</a>
+        <a href="sobre-mi.html">Sobre mí</a>
+        <a href="libros.html">Libros disponibles</a>
+        <a href="contacto.html">Contacto</a>
+        <div class="nav-divider"></div>
+        <a href="https://transa.hypotheses.org/" target="_blank" rel="noopener" class="external-blog">Transa · Archivo ↗</a>
+      </nav>
 
-  <footer>
-    <span>Darwin Rodríguez Suazo · Editor independiente y librero</span>
-    <span><a href="https://transa.hypotheses.org/" target="_blank" rel="noopener">Transa · blog de archivo</a> · darwinrodriguez.edicion@gmail.com</span>
-  </footer>
+      <figure class="margin-artwork">
+        <img src="img/cartel-tome.jpg" alt="Cartel Jornadas Tomecinas de Enero, Círculo de Bellas Artes de Tomé, 1987" onerror="this.parentElement.style.display='none';">
+        <figcaption>Jornadas Tomecinas de Enero · Círculo de Bellas Artes de Tomé (diseño de S. Espinoza, 1986–1987).</figcaption>
+      </figure>
+    </aside>
+
+    <main class="content-column">
+      <p class="kicker">Catálogo de intervenciones</p>
+      <h1>Trabajos realizados</h1>
+      <p class="lead">Selección de libros de poesía, ensayo y narrativa en los que he participado en distintas etapas de edición, corrección y producción.</p>
+
+      <article class="book-entry">
+        <div class="book-cover">
+          <img src="portadas/libro-1.jpg" alt="Portada del libro 1" onerror="this.style.display='none'; this.parentElement.textContent='Portada pendiente';">
+        </div>
+        <div>
+          <p class="kicker">Poesía · Editorial Ejemplo · Santiago, 2025</p>
+          <h3>Título del primer libro — Nombre del Autor/a</h3>
+          <p><strong>Trabajo realizado:</strong> revisión del manuscrito, corrección de pruebas, coordinación con diseño y preparación de archivos para impresión.</p>
+          <p>Breve descripción del proyecto editorial, características materiales de la edición o contexto de publicación en dos o tres líneas.</p>
+          <a href="https://enlace-editorial-o-resena.cl" target="_blank" rel="noopener" class="text-link">Ver ficha en la editorial →</a>
+        </div>
+      </article>
+
+      <article class="book-entry">
+        <div class="book-cover">
+          <img src="portadas/libro-2.jpg" alt="Portada del libro 2" onerror="this.style.display='none'; this.parentElement.textContent='Portada pendiente';">
+        </div>
+        <div>
+          <p class="kicker">Ensayo · Editorial Ejemplo · Santiago, 2024</p>
+          <h3>Título del segundo libro — Nombre del Autor/a</h3>
+          <p><strong>Trabajo realizado:</strong> lectura editorial, unificación de criterios y aparato crítico, corrección de estilo y seguimiento de imprenta.</p>
+          <p>Breve descripción del proyecto editorial, enfoque de la colección o relevancia del texto dentro de su catálogo.</p>
+          <a href="https://enlace-editorial-o-resena.cl" target="_blank" rel="noopener" class="text-link">Ver ficha en la editorial →</a>
+        </div>
+      </article>
+
+      <footer class="colophon-footer">
+        <span>Darwin Rodríguez Suazo · Chile</span>
+        <span>darwinrodriguez.edicion@gmail.com</span>
+      </footer>
+    </main>
+  </div>
 </body>
 </html>
