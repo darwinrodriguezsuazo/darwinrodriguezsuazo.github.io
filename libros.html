@@ -7,45 +7,52 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="bg-watermark" aria-hidden="true"></div>
-
-  <header>
-    <div class="site-branding">
-      <a href="index.html" class="site-title">Darwin Rodríguez Suazo</a>
-      <p class="site-description">Editor independiente y librero | literatura y edición</p>
-    </div>
-    <nav aria-label="Menú principal">
-      <a href="index.html">Inicio</a>
-      <a href="servicios.html">Servicios editoriales</a>
-      <a href="trabajos.html">Trabajos realizados</a>
-      <a href="sobre-mi.html">Sobre mí</a>
-      <a href="libros.html" class="active">Libros disponibles</a>
-      <a href="contacto.html">Contacto</a>
-      <a href="https://transa.hypotheses.org/" target="_blank" rel="noopener" class="blog-link">Transa (Blog) ↗</a>
-    </nav>
-  </header>
-
-  <main>
-    <p class="meta">Librería personal</p>
-    <h1>Libros disponibles</h1>
-    <p class="lead">Selección acotada de títulos de poesía, ensayo y editoriales independientes. Para consultar disponibilidad y formas de envío, escríbeme indicando el título que buscas.</p>
-
-    <article class="book-entry">
-      <div class="book-cover">
-        <img src="portadas/libro-1.jpg" alt="Portada del libro disponible" onerror="this.style.display='none'; this.parentElement.textContent='Portada pendiente';">
+  <div class="editorial-layout">
+    <aside class="sidebar">
+      <div class="identity">
+        <a href="index.html" class="site-title">Darwin Rodríguez Suazo</a>
+        <p class="site-role">Editor independiente &amp; librero<br>Literatura, edición y archivo</p>
       </div>
-      <div>
-        <p class="meta">Editorial · Año · Disponible ($14.000 CLP)</p>
-        <h3>Título del libro seleccionado — Autor/a</h3>
-        <p>Nota breve de lectura sobre por qué este título forma parte de la selección, características de su edición o qué lo hace singular dentro de su catálogo.</p>
-        <a href="contacto.html" class="btn">Consultar por este ejemplar</a>
-      </div>
-    </article>
-  </main>
 
-  <footer>
-    <span>Darwin Rodríguez Suazo · Editor independiente y librero</span>
-    <span><a href="https://transa.hypotheses.org/" target="_blank" rel="noopener">Transa · blog de archivo</a> · darwinrodriguez.edicion@gmail.com</span>
-  </footer>
+      <nav class="nav-menu" aria-label="Menú principal">
+        <a href="index.html">Inicio</a>
+        <a href="servicios.html">Servicios editoriales</a>
+        <a href="trabajos.html">Trabajos realizados</a>
+        <a href="sobre-mi.html">Sobre mí</a>
+        <a href="libros.html" class="active">Libros disponibles</a>
+        <a href="contacto.html">Contacto</a>
+        <div class="nav-divider"></div>
+        <a href="https://transa.hypotheses.org/" target="_blank" rel="noopener" class="external-blog">Transa · Archivo ↗</a>
+      </nav>
+
+      <figure class="margin-artwork">
+        <img src="img/cartel-tome.jpg" alt="Cartel Jornadas Tomecinas de Enero, Círculo de Bellas Artes de Tomé, 1987" onerror="this.parentElement.style.display='none';">
+        <figcaption>Jornadas Tomecinas de Enero · Círculo de Bellas Artes de Tomé (diseño de S. Espinoza, 1986–1987).</figcaption>
+      </figure>
+    </aside>
+
+    <main class="content-column">
+      <p class="kicker">Librería personal</p>
+      <h1>Libros disponibles</h1>
+      <p class="lead">Selección acotada de títulos de poesía, ensayo y editoriales independientes. Para consultar disponibilidad y formas de envío, escríbeme indicando el título que buscas.</p>
+
+      <article class="book-entry">
+        <div class="book-cover">
+          <img src="portadas/libro-1.jpg" alt="Portada del libro disponible" onerror="this.style.display='none'; this.parentElement.textContent='Portada pendiente';">
+        </div>
+        <div>
+          <p class="kicker">Editorial · Año · Disponible ($14.000 CLP)</p>
+          <h3>Título del libro seleccionado — Autor/a</h3>
+          <p>Nota breve de lectura sobre por qué este título forma parte de la selección, características de su edición o qué lo hace singular dentro de su catálogo.</p>
+          <a href="contacto.html" class="btn">Consultar por este ejemplar</a>
+        </div>
+      </article>
+
+      <footer class="colophon-footer">
+        <span>Darwin Rodríguez Suazo · Chile</span>
+        <span>darwinrodriguez.edicion@gmail.com</span>
+      </footer>
+    </main>
+  </div>
 </body>
 </html>
