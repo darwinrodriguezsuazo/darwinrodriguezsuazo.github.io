@@ -7,40 +7,52 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <a href="index.html" class="site-title">Darwin Rodríguez Suazo</a>
-    <nav>
-      <a href="index.html">Inicio</a>
-      <a href="servicios.html">Servicios editoriales</a>
-      <a href="trabajos.html">Trabajos realizados</a>
-      <a href="sobre-mi.html">Sobre mí</a>
-      <a href="libros.html" class="active">Libros disponibles</a>
-      <a href="contacto.html">Contacto</a>
-    </nav>
-  </header>
+  <div class="bg-engraving" aria-hidden="true"></div>
 
-  <main>
-    <h1>Libros disponibles</h1>
-    <p class="lead">Selección acotada de títulos de poesía, ensayo y editoriales independientes. Para consultar disponibilidad y formas de envío, escríbeme indicando el título que buscas.</p>
+  <div class="poster-sheet">
+    <div class="poster-inner">
+      <header>
+        <div class="masthead-top">
+          <a href="index.html" class="site-title">Darwin Rodríguez Suazo</a>
+          <span class="site-subtitle">Editor independiente &amp; librero · Literatura</span>
+        </div>
+        <nav>
+          <a href="index.html">Inicio</a>
+          <a href="servicios.html">Servicios editoriales</a>
+          <a href="trabajos.html">Trabajos realizados</a>
+          <a href="sobre-mi.html">Sobre mí</a>
+          <a href="libros.html" class="active">Libros disponibles</a>
+          <a href="contacto.html">Contacto</a>
+          <a href="#" target="_blank" rel="noopener" class="blog-link">Blog ↗</a>
+        </nav>
+      </header>
 
-    <article class="book-entry">
-      <div class="book-cover">
-        <img src="portadas/libro-1.svg" alt="Portada del libro disponible" onerror="this.style.display='none'; this.parentElement.textContent='Portada pendiente';">
-      </div>
-      <div>
-        <p class="meta">Editorial · Año · Disponible ($14.000 CLP)</p>
-        <h3>Título del libro seleccionado — Autor/a</h3>
-        <p>Nota breve de lectura sobre por qué este título forma parte de la selección, características de su edición o qué lo hace singular dentro de su catálogo.</p>
-        <a href="contacto.html" class="btn">Consultar por este ejemplar</a>
-      </div>
-    </article>
+      <main>
+        <p class="meta">Librería personal</p>
+        <h1>Libros disponibles</h1>
+        <p class="lead">Selección acotada de títulos de poesía, ensayo y editoriales independientes. Para consultar disponibilidad y formas de envío, escríbeme indicando el título que buscas.</p>
 
-    <!-- Copia y pega el bloque <article class="book-entry"> para agregar más libros disponibles -->
-  </main>
+        <article class="book-entry">
+          <div class="book-cover">
+            <img src="portadas/libro-1.jpg" alt="Portada del libro disponible" onerror="this.style.display='none'; this.parentElement.textContent='Portada pendiente';">
+          </div>
+          <div>
+            <p class="meta">Editorial · Año · Disponible ($14.000 CLP)</p>
+            <h3>Título del libro seleccionado — Autor/a</h3>
+            <p>Nota breve de lectura sobre por qué este título forma parte de la selección, características de su edición o qué lo hace singular dentro de su catálogo.</p>
+            <a href="contacto.html" class="btn">Consultar por este ejemplar</a>
+          </div>
+        </article>
+      </main>
 
-  <footer>
-    <span>Darwin Rodríguez Suazo · Edición y librería literaria</span>
-    <span>darwinrodriguez.edicion@gmail.com</span>
-  </footer>
+      <footer>
+        <div class="footer-row">
+          <span>Darwin Rodríguez Suazo · Edición y librería literaria</span>
+          <span>darwinrodriguez.edicion@gmail.com</span>
+        </div>
+        <p class="colophon">Identidad visual inspirada en la gráfica cultural de Tomé y el Círculo de Bellas Artes (1987).</p>
+      </footer>
+    </div>
+  </div>
 </body>
 </html>
