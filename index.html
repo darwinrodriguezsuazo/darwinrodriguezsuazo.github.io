@@ -7,55 +7,78 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="bg-watermark" aria-hidden="true"></div>
-
-  <header>
-    <div class="site-branding">
-      <a href="index.html" class="site-title">Darwin Rodríguez Suazo</a>
-      <p class="site-description">Editor independiente y librero | literatura y edición</p>
-    </div>
-    <nav aria-label="Menú principal">
-      <a href="index.html" class="active">Inicio</a>
-      <a href="servicios.html">Servicios editoriales</a>
-      <a href="trabajos.html">Trabajos realizados</a>
-      <a href="sobre-mi.html">Sobre mí</a>
-      <a href="libros.html">Libros disponibles</a>
-      <a href="contacto.html">Contacto</a>
-      <a href="https://transa.hypotheses.org/" target="_blank" rel="noopener" class="blog-link">Transa (Blog) ↗</a>
-    </nav>
-  </header>
-
-  <main>
-    <p class="meta">Edición · Corrección · Circulación del libro</p>
-    <h1>Edición, corrección y gestión editorial para libros de poesía, ensayo y narrativa.</h1>
-    <p class="lead">Acompaño manuscritos y proyectos editoriales de autores, editoriales e instituciones desde la lectura y revisión del texto hasta su producción, impresión y distribución.</p>
-
-    <a href="contacto.html" class="btn">Consultar por un proyecto</a>
-
-    <section class="sections-list">
-      <div class="section-item">
-        <h3>Edición y corrección</h3>
-        <p>Lectura crítica de manuscritos, informes de evaluación, corrección de estilo y corrección de pruebas antes de imprenta.</p>
-        <a href="servicios.html" class="inline-link">Ver etapas de trabajo →</a>
+  <div class="editorial-layout">
+    <aside class="sidebar">
+      <div class="identity">
+        <a href="index.html" class="site-title">Darwin Rodríguez Suazo</a>
+        <p class="site-role">Editor independiente &amp; librero<br>Literatura, edición y archivo</p>
       </div>
 
-      <div class="section-item">
-        <h3>Producción y gestión editorial</h3>
-        <p>Coordinación de diseño y diagramación, solicitud de presupuestos, preparación de originales y seguimiento de impresión.</p>
-        <a href="trabajos.html" class="inline-link">Explorar trabajos realizados →</a>
-      </div>
+      <nav class="nav-menu" aria-label="Menú principal">
+        <a href="index.html" class="active">Inicio</a>
+        <a href="servicios.html">Servicios editoriales</a>
+        <a href="trabajos.html">Trabajos realizados</a>
+        <a href="sobre-mi.html">Sobre mí</a>
+        <a href="libros.html">Libros disponibles</a>
+        <a href="contacto.html">Contacto</a>
+        <div class="nav-divider"></div>
+        <a href="https://transa.hypotheses.org/" target="_blank" rel="noopener" class="external-blog">Transa · Archivo ↗</a>
+      </nav>
 
-      <div class="section-item">
-        <h3>Libros seleccionados</h3>
-        <p>Catálogo acotado de poesía, ensayo y ediciones independientes disponibles mediante consulta directa.</p>
-        <a href="libros.html" class="inline-link">Revisar libros disponibles →</a>
-      </div>
-    </section>
-  </main>
+      <figure class="margin-artwork">
+        <img src="img/cartel-tome.jpg" alt="Cartel Jornadas Tomecinas de Enero, Círculo de Bellas Artes de Tomé, 1987" onerror="this.parentElement.style.display='none';">
+        <figcaption>Jornadas Tomecinas de Enero · Círculo de Bellas Artes de Tomé (diseño de S. Espinoza, 1986–1987).</figcaption>
+      </figure>
+    </aside>
 
-  <footer>
-    <span>Darwin Rodríguez Suazo · Editor independiente y librero</span>
-    <span><a href="https://transa.hypotheses.org/" target="_blank" rel="noopener">Transa · blog de archivo</a> · darwinrodriguez.edicion@gmail.com</span>
-  </footer>
+    <main class="content-column">
+      <p class="kicker">Edición · Corrección · Circulación del libro</p>
+      <h1>Edición, corrección y gestión editorial para libros de poesía, ensayo y narrativa.</h1>
+      <p class="lead">Acompaño manuscritos y proyectos editoriales de autores, editoriales independientes e instituciones desde la lectura y preparación del texto hasta su producción, impresión y distribución.</p>
+
+      <a href="contacto.html" class="btn">Consultar por un proyecto</a>
+
+      <section class="index-table" aria-label="Áreas de trabajo">
+        <div class="index-row">
+          <span class="index-num">01</span>
+          <div class="index-body">
+            <h3>Edición y corrección textual</h3>
+            <p>Lectura crítica de manuscritos, informes de evaluación, corrección de estilo y corrección de pruebas antes de entrar a imprenta.</p>
+            <a href="servicios.html" class="text-link">Ver etapas y criterios de trabajo →</a>
+          </div>
+        </div>
+
+        <div class="index-row">
+          <span class="index-num">02</span>
+          <div class="index-body">
+            <h3>Producción y gestión editorial</h3>
+            <p>Coordinación con diseñadores y diagramadores, solicitud de presupuestos, preparación de originales y seguimiento de impresión.</p>
+            <a href="trabajos.html" class="text-link">Revisar trabajos realizados →</a>
+          </div>
+        </div>
+
+        <div class="index-row">
+          <span class="index-num">03</span>
+          <div class="index-body">
+            <h3>Selección de librería</h3>
+            <p>Catálogo acotado de poesía, ensayo y ediciones independientes disponibles mediante consulta directa.</p>
+            <a href="libros.html" class="text-link">Explorar libros disponibles →</a>
+          </div>
+        </div>
+      </section>
+
+      <aside class="archive-bridge">
+        <p class="kicker">Cuaderno e investigación</p>
+        <h3>Transa — Chilean poetry · Blog de archivo</h3>
+        <p>En paralelo al trabajo editorial, mantengo un espacio de notas críticas, documentos y rescate bibliográfico en torno a la poesía chilena en la plataforma académica Hypotheses.</p>
+        <a href="https://transa.hypotheses.org/" target="_blank" rel="noopener" class="text-link">Visitar transa.hypotheses.org ↗</a>
+      </aside>
+
+      <footer class="colophon-footer">
+        <span>Darwin Rodríguez Suazo · Chile</span>
+        <span>darwinrodriguez.edicion@gmail.com</span>
+      </footer>
+    </main>
+  </div>
 </body>
 </html>
