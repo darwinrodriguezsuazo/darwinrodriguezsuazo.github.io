@@ -7,60 +7,67 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="bg-watermark" aria-hidden="true"></div>
-
-  <header>
-    <div class="site-branding">
-      <a href="index.html" class="site-title">Darwin Rodríguez Suazo</a>
-      <p class="site-description">Editor independiente y librero | literatura y edición</p>
-    </div>
-    <nav aria-label="Menú principal">
-      <a href="index.html">Inicio</a>
-      <a href="servicios.html">Servicios editoriales</a>
-      <a href="trabajos.html">Trabajos realizados</a>
-      <a href="sobre-mi.html">Sobre mí</a>
-      <a href="libros.html">Libros disponibles</a>
-      <a href="contacto.html" class="active">Contacto</a>
-      <a href="https://transa.hypotheses.org/" target="_blank" rel="noopener" class="blog-link">Transa (Blog) ↗</a>
-    </nav>
-  </header>
-
-  <main>
-    <p class="meta">Correspondencia y consultas</p>
-    <h1>Contacto</h1>
-    <p class="lead">Puedes escribirme directamente a <a href="mailto:darwinrodriguez.edicion@gmail.com" class="inline-link">darwinrodriguez.edicion@gmail.com</a> o completar el siguiente formulario según el motivo de tu consulta.</p>
-
-    <form action="https://formspree.io/f/TU_CODIGO_FORMSPREE" method="POST">
-      <div>
-        <label for="nombre">Nombre</label>
-        <input type="text" id="nombre" name="nombre" required>
+  <div class="editorial-layout">
+    <aside class="sidebar">
+      <div class="identity">
+        <a href="index.html" class="site-title">Darwin Rodríguez Suazo</a>
+        <p class="site-role">Editor independiente &amp; librero<br>Literatura, edición y archivo</p>
       </div>
 
-      <div>
-        <label for="email">Correo electrónico</label>
-        <input type="email" id="email" name="email" required>
-      </div>
+      <nav class="nav-menu" aria-label="Menú principal">
+        <a href="index.html">Inicio</a>
+        <a href="servicios.html">Servicios editoriales</a>
+        <a href="trabajos.html">Trabajos realizados</a>
+        <a href="sobre-mi.html">Sobre mí</a>
+        <a href="libros.html">Libros disponibles</a>
+        <a href="contacto.html" class="active">Contacto</a>
+        <div class="nav-divider"></div>
+        <a href="https://transa.hypotheses.org/" target="_blank" rel="noopener" class="external-blog">Transa · Archivo ↗</a>
+      </nav>
 
-      <div>
-        <label for="tipo">Tipo de consulta</label>
-        <select id="tipo" name="tipo">
-          <option value="proyecto-editorial">Proyecto editorial (autor, editorial o institución)</option>
-          <option value="libro-disponible">Libros disponibles (compra, disponibilidad o envío)</option>
-        </select>
-      </div>
+      <figure class="margin-artwork">
+        <img src="img/cartel-tome.jpg" alt="Cartel Jornadas Tomecinas de Enero, Círculo de Bellas Artes de Tomé, 1987" onerror="this.parentElement.style.display='none';">
+        <figcaption>Jornadas Tomecinas de Enero · Círculo de Bellas Artes de Tomé (diseño de S. Espinoza, 1986–1987).</figcaption>
+      </figure>
+    </aside>
 
-      <div>
-        <label for="mensaje">Descripción breve del proyecto o título que buscas</label>
-        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Si se trata de un manuscrito, indica género, extensión aproximada y estado actual del texto." required></textarea>
-      </div>
+    <main class="content-column">
+      <p class="kicker">Correspondencia</p>
+      <h1>Contacto</h1>
+      <p class="lead">Puedes escribirme directamente a <a href="mailto:darwinrodriguez.edicion@gmail.com" class="text-link">darwinrodriguez.edicion@gmail.com</a> o completar el siguiente formulario según el motivo de tu consulta.</p>
 
-      <button type="submit">Enviar consulta</button>
-    </form>
-  </main>
+      <form action="https://formspree.io/f/TU_CODIGO_FORMSPREE" method="POST">
+        <div>
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
 
-  <footer>
-    <span>Darwin Rodríguez Suazo · Editor independiente y librero</span>
-    <span><a href="https://transa.hypotheses.org/" target="_blank" rel="noopener">Transa · blog de archivo</a> · darwinrodriguez.edicion@gmail.com</span>
-  </footer>
+        <div>
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div>
+          <label for="tipo">Tipo de consulta</label>
+          <select id="tipo" name="tipo">
+            <option value="proyecto-editorial">Proyecto editorial (autor, editorial o institución)</option>
+            <option value="libro-disponible">Libros disponibles (compra, disponibilidad o envío)</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="mensaje">Descripción breve del proyecto o título que buscas</label>
+          <textarea id="mensaje" name="mensaje" rows="5" placeholder="Si se trata de un manuscrito, indica género, extensión aproximada y estado actual del texto." required></textarea>
+        </div>
+
+        <button type="submit">Enviar consulta</button>
+      </form>
+
+      <footer class="colophon-footer">
+        <span>Darwin Rodríguez Suazo · Chile</span>
+        <span>darwinrodriguez.edicion@gmail.com</span>
+      </footer>
+    </main>
+  </div>
 </body>
 </html>
