@@ -42,7 +42,7 @@ body {
   height: 92vh;
   z-index: 0;
   pointer-events: none;
-  background-image: url('img/cartel-tome.jpg');
+  background-image: url('img/cartel-tome.png');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
