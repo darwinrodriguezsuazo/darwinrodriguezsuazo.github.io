@@ -14,7 +14,7 @@
         <p class="site-role">Editor</p>
       </div>
 
-<nav class="nav-menu" aria-label="Menú principal">
+      <nav class="nav-menu" aria-label="Menú principal">
         <a href="index.html">Sobre mí</a>
         <a href="servicios.html">Valores y servicios</a>
         <a href="trabajos.html">Portafolio</a>
@@ -37,7 +37,7 @@
 
       <article class="book-entry">
         <div class="book-cover">
-          <img src="portadas/lazarus-taxon.jpg" alt="Portada de Lazarus Taxon: Grabados de Américo Caamaño" onerror="this.style.display='none'; this.parentElement.textContent='Portada pendiente';">
+          <img src="portadas/lazarus-taxon.jpg" data-slug="lazarus-taxon" alt="Portada de Lazarus Taxon: Grabados de Américo Caamaño" onerror="probarPortada(this)">
         </div>
         <div>
           <p class="kicker">Ensayo / Investigación / Narrativa / Gráfica · Editorial Al Aire Libro · 2025</p>
@@ -54,7 +54,7 @@
 
       <article class="book-entry">
         <div class="book-cover">
-          <img src="portadas/monografia-tome.jpg" alt="Portada de Monografía histórica y geográfica de Tomé" onerror="this.style.display='none'; this.parentElement.textContent='Portada pendiente';">
+          <img src="portadas/monografia-tome.jpg" data-slug="monografia-tome" alt="Portada de Monografía histórica y geográfica de Tomé" onerror="probarPortada(this)">
         </div>
         <div>
           <p class="kicker">Salmuera Ediciones / Editorial Al Aire Libro · 2026 · Reedición del original de 1926</p>
@@ -71,7 +71,7 @@
 
       <article class="book-entry">
         <div class="book-cover">
-          <img src="portadas/constructos-planilineales.jpg" alt="Portada de Constructos planilineales: materialismo gótico y teoría ficción cibernética" onerror="this.style.display='none'; this.parentElement.textContent='Portada pendiente';">
+          <img src="portadas/constructos-planilineales.jpg" data-slug="constructos-planilineales" alt="Portada de Constructos planilineales: materialismo gótico y teoría ficción cibernética" onerror="probarPortada(this)">
         </div>
         <div>
           <p class="kicker">Abstracciones Concretas Editorial</p>
@@ -92,5 +92,33 @@
       </footer>
     </main>
   </div>
+
+  <script>
+    function probarPortada(img) {
+      var slug = img.getAttribute('data-slug');
+      var rutas = [
+        'portadas/' + slug + '.jpeg',
+        'portadas/' + slug + '.png',
+        'portadas/' + slug + '.JPG',
+        'portadas/' + slug + '.JPEG',
+        'portadas/' + slug + '.PNG',
+        'portadas/' + slug + '.webp',
+        slug + '.jpg',
+        slug + '.jpeg',
+        slug + '.png',
+        slug + '.JPG',
+        'img/' + slug + '.jpg',
+        'img/' + slug + '.png'
+      ];
+      var intento = parseInt(img.getAttribute('data-intento') || '0', 10);
+      if (intento < rutas.length) {
+        img.setAttribute('data-intento', intento + 1);
+        img.src = rutas[intento];
+      } else {
+        img.style.display = 'none';
+        img.parentElement.textContent = 'Portada pendiente';
+      }
+    }
+  </script>
 </body>
 </html>
